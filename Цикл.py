@@ -1,6 +1,10 @@
 a = int(input())
 b = int(input())
 c = int(input())
+V = a == 0 or b == 0 or c == 0 or 'Нет нулевых значений!!!'
+print(V)
+S = a or b or c or 'Введены все нули!'
+S
 if a > b + c:
     print(a - b - c)
 elif a < b + c:
