@@ -84,7 +84,6 @@ while True:
     'sep1':'separator1',
     'sep2':'separator2'
     }
-    for i in range(0,6):
-        print(t1[i], t2[i], t3[i], t4[i], t5[i], t6[i])
-    time.sleep()
+    print(t1[0], t2[0], separator1[0], t3[0], t4[0], separator2[0], t5[0], t6[0])
+    time.sleep(1)
     os.system('CLS')
