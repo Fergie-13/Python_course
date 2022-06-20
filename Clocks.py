@@ -59,12 +59,12 @@ while True:
         2: "\u2B1B\u2B1B\u2B1C\u2B1C\u2B1C\u2B1C\u2B1B",
         3: "\u2B1B\u2B1B\u2B1B\u2B1B\u2B1B\u2B1C\u2B1B",
         4: "\u2B1B\u2B1B\u2B1C\u2B1C\u2B1C\u2B1C\u2B1B"}
-    separator1 = {0: "\u2B1B\u2B1B\u2B1B",
+    on = {0: "\u2B1B\u2B1B\u2B1B",
               1: "\u2B1B\u2B1C\u2B1B",
               2: "\u2B1B\u2B1B\u2B1B",
               3: "\u2B1B\u2B1C\u2B1B",
               4: "\u2B1B\u2B1B\u2B1B"}
-    separator2 = {0: "\u2B1B\u2B1B\u2B1B",
+    off = {0: "\u2B1B\u2B1B\u2B1B",
               1: "\u2B1B\u2B1B\u2B1B",
               2: "\u2B1B\u2B1B\u2B1B",
               3: "\u2B1B\u2B1B\u2B1B",
@@ -80,11 +80,9 @@ while True:
     '7':seven,
     '8':eight,
     '9':nine,
-    'sep1':'separator1',
-    'sep2':'separator2'
     }
     for i in range(0,4):
-        print(d[t1][i], d[t2][i], d[t3][i], d[t4][i], d[t5][i], d[t6][i])
+        print(d[t1][i], d[t2][i], on[i], d[t3][i], d[t4][i], off[i] d[t5][i], d[t6][i])
     time.sleep(0.9)
     import os
     def cls():
