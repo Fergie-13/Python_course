@@ -83,7 +83,8 @@ while True:
     'sep1':'separator1',
     'sep2':'separator2'
     }
-    print(d[t1], d[t2], d[t3], d[t4], d[t5], d[t6])
+    for i in range(0,4):
+        print(d[t1][i], d[t2][i], d[t3][i], d[t4][i], d[t5][i], d[t6][i])
     time.sleep(0.9)
     import os
     def cls():
