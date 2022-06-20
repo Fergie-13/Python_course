@@ -85,6 +85,5 @@ while True:
         print(d[t1][i], d[t2][i], on[i], d[t3][i], d[t4][i], off[i] d[t5][i], d[t6][i])
     time.sleep(0.9)
     import os
-    def cls():
-        os.system('cls' if os.name == 'nt' else 'clear')
-    cls()
+    clear = lambda: os.system('cls')
+    clear()
