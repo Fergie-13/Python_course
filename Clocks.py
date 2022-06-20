@@ -1,5 +1,4 @@
 import time
-import os
 while True:
     import datetime
     tn = datetime.datetime.now()
@@ -71,19 +70,22 @@ while True:
               3: "\u2B1B\u2B1B\u2B1B",
               4: "\u2B1B\u2B1B\u2B1B"}
     d = {
-    '0':'zero',
-    '1':'one',
-    '2':'two',
-    '3':'three',
-    '4':'four',
-    '5':'five',
-    '6':'six',
-    '7':'seven',
-    '8':'eight',
-    '9':'nine',
+    '0':zero,
+    '1':one,
+    '2':two,
+    '3':three,
+    '4':four,
+    '5':five,
+    '6':six,
+    '7':seven,
+    '8':eight,
+    '9':nine,
     'sep1':'separator1',
     'sep2':'separator2'
     }
-    print(t1[0], t2[0], separator1[0], t3[0], t4[0], separator2[0], t5[0], t6[0])
-    time.sleep(1)
-    os.system('CLS')
+    print(d[t1], d[t2], d[t3], d[t4], d[t5], d[t6])
+    time.sleep(0.9)
+    import os
+    def cls():
+        os.system('cls' if os.name == 'nt' else 'clear')
+    cls()
