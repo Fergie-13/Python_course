@@ -87,3 +87,4 @@ while True:
     import os
     clear = lambda: os.system('cls')
     clear()
+# Я честно пытался найти функцию, которая очищает экран, но они не работают. Эту функцию взял с stackoverflow, ответ отмечен как правильный.
