@@ -3,7 +3,7 @@ def gen_number():
     while True:
         if num % 3 == 0:
             print('Василий')
-
+            num = num + 1
         yield num
         num += 1
 gen = gen_number()
